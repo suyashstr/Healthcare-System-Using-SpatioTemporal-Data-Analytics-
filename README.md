@@ -6,19 +6,13 @@ This project involves predicting COVID-19 cases using historical data and machin
 ## Dataset:
 The dataset used in this project is covid_19_india.csv. It contains daily COVID-19 data from different states and Union Territories in India. The crucial columns are:
 
-Date
-State/UnionTerritory
-ConfirmedIndianNational
-ConfirmedForeignNational
-Cured
-Deaths
-Confirmed
+Date, State/UnionTerritory, ConfirmedIndianNational, ConfirmedForeignNational, Cured, Deaths, Confirmed.
 
 ## Libraries Used:
-Pandas: For data manipulation and cleaning.
-NumPy: For numerical operations.
-Matplotlib and Seaborn: For data visualization.
-Scikit-learn: For splitting data into training and testing sets, and scaling features.
+Pandas: For data manipulation and cleaning.</br>
+NumPy: For numerical operations.</br>
+Matplotlib and Seaborn: For data visualization.</br>
+Scikit-learn: For splitting data into training and testing sets, and scaling features.</br>
 TensorFlow/Keras: For building LSTM and CNN models.
 
 ### Key Concepts:
@@ -27,12 +21,12 @@ LSTM (Long Short-Term Memory): LSTM is a type of recurrent neural network (RNN) 
 #### CNN (Convolutional Neural Networks): CNNs are widely used in image processing but can also be applied to time-series problems. By treating time-series data as a multi-dimensional input, CNNs can capture spatial and temporal features, making them useful for certain forecasting tasks.
 
 #### Data Preprocessing: 
-Data Cleaning: Handling missing values, filtering columns, and ensuring data consistency are critical steps before modeling.
+Data Cleaning: Handling missing values, filtering columns, and ensuring data consistency are critical steps before modeling.</br>
 Feature Scaling: Standardizing the data ensures that no single feature dominates the learning process due to differing scales.
 
 #### Model Training and Validation:
-Epochs and Batch Size: Models are trained over multiple epochs with a specific batch size to gradually minimize the loss function.
-Loss Functions: MSE is used for regression tasks to quantify the difference between predicted and actual values.
+Epochs and Batch Size: Models are trained over multiple epochs with a specific batch size to gradually minimize the loss function.</br>
+Loss Functions: MSE is used for regression tasks to quantify the difference between predicted and actual values.</br>
 Validation: A validation split is used to monitor model performance during training and prevent overfitting.
 
 
@@ -44,8 +38,9 @@ Handle missing values by dropping rows where crucial columns contain null values
 Group the data by Date and State/UnionTerritory to prepare it for time-series analysis.
 Pivot the data to create a time-series structure, with Date as the index and State/UnionTerritory as columns.
 
-### Scaling the Data: Use StandardScaler from Scikit-learn to standardize the features for efficient learning by the models.
-LSTM Model:The LSTM model is designed for sequential data. It takes historical data points (14 days) as input and predicts the next day's COVID-19 cases.
+### Scaling the Data: 
+Use StandardScaler from Scikit-learn to standardize the features for efficient learning by the models.
+LSTM Model:The LSTM model is designed for sequential data. It takes historical data points (14 days) as input and predicts the next day's COVID-19 cases.</br>
 Architecture:
 Two LSTM layers with 64 units each.
 Dropout layers to prevent overfitting.
