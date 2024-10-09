@@ -1,4 +1,4 @@
-# BreadcrumbsHealthcare System(UsingSpatio Temporal Data-Analytics)
+# Healthcare System(UsingSpatio Temporal Data-Analytics)
 
 ## Project Overview:
 This project involves predicting COVID-19 cases using historical data and machine learning models, specifically Long Short-Term Memory (LSTM) and Convolutional Neural Networks (CNN). The project utilizes time-series data from a publicly available COVID-19 dataset, performs preprocessing and visualization, and compares the performance of LSTM and CNN models in predicting future cases.
